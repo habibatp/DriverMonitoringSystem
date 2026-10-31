@@ -1,0 +1,5 @@
+dms_env/
+__pycache__/
+models/
+.vscode/
+*.pyc

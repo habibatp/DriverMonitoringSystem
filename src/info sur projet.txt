@@ -1,0 +1,37 @@
+Face landmark detection:
+e modèle pré-entraîné effectue principalement trois opérations :
+1. Face Detection : localiser le visage dans l'image.
+2. Face Landmark Detection : identifier les 478 points caractéristiques du visage.
+3. Tracking : maintenir le suivi des caractéristiques entre les images successives.
+
+FPS signifie images par seconde.
+
+C'est une unité qui mesure le nombre d'images qu'un système traite ou affiche chaque seconde.
+
+Dans ton DMS, la webcam fournit une succession d'images. Pour chaque image, ton programme effectue plusieurs opérations :
+1. Récupérer l'image de la webcam.
+2. Préparer l'image pour MediaPipe.
+3. Détecter le visage.
+4. Extraire les landmarks.
+5. Calculer les indicateurs.
+6. Afficher le résultat.
+
+
+situation	MAR observé
+Bouche fermée	0 – 0,023
+Bouche légèrement ouverte	0,15
+Bouche normalement ouverte	0,15 – 0,20
+Bouche ouverte davantage	0,25
+Bouche largement ouverte	0,50 – 0,60
+Bouche extrêmement ouverte	1,12
+
+Distribution indicative des mesures
+Yeux ouverts 0,38 – 0,43
+Yeux fermés	0.064	0.132	
+Clignement 0,056 – 0,15
+
+Paramètre	Valeur
+close_threshold	0.20
+open_threshold	0.25
+min_closed_duration	1.5 s
+smoothing_window	5
