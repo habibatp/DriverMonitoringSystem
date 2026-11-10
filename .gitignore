@@ -1,5 +1,29 @@
-dms_env/
+﻿# Python
 __pycache__/
-models/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+dms_env/
+venv/
+.venv/
+
+# Datasets and local evaluation results
+dataset/
+results/
+result.jpg
+*.csv
+*.log
+
+# IDE
 .vscode/
-*.pyc
+.idea/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+/src/info sur projet.txt

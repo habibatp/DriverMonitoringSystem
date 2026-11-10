@@ -1,0 +1,26 @@
+﻿# Python environments
+dms_env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Git
+.git/
+
+# Datasets and local results
+dataset/
+results/
+result.jpg
+*.csv
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+
+.ipynb_checkpoints/
